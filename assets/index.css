@@ -1,0 +1,32 @@
+div.jumbotron {
+            background-image: url('seguridad-informatica.png');
+            background-position: top;
+            background-color: #014164;
+        }
+            .white {
+                color: white !important;
+            }
+                footer {
+                    background-color: #eee;
+                }
+                    footer div.container img {
+                        display: block;
+                        margin: 3vh auto;
+                    }
+                        p.foo, pre {
+                            font-size: 1.1em;
+                        }
+                        footer div.container-fluid {
+                            background-color: #014164;
+                        }
+                            footer div.container-fluid p {
+                                margin: .5%;
+                            }
+                                kbd {
+                                        padding: 2px 6px;
+                                        font-size: 95%;
+                                        background-color: #014164;
+                                    }
+                                        blockquote p {
+                                            font-size: .8em;
+                                        }
