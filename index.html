@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Guía del Curso de Introducción a la Seguridad Informática</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
@@ -22,6 +22,9 @@
     <meta name="msapplication-TileColor" content="#014164">
     <meta name="msapplication-TileImage" content="assets/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Viewport, Google Fonts y CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/index.css">
 </head>
 <body>
@@ -33,9 +36,70 @@
 
     <div class="container">
         <section>
-            
+            <h2>Introducción a la Seguridad Informática y Pentesting</h2>
+
+            <h3>Introducción al Pentesting</h3>
+            <p>El <strong>Pentesting</strong> se define como un conjunto de técnicas de <strong>hacking</strong> que ayudan a encontrar alguna vulnerabilidad en un sistema informático con el fin de obtener el acceso a el.</p>
+            <p>El objetivo principal del <strong>Pentesting</strong> es determinar la seguridad de un sistema, habitualmente esta serie de técnicas se utilizan para evaluar el cumplimiento de las políticas de seguridad de una empresa y así determinar la capacidad que tiene dicha organización para identificar y responder a problemas de seguridad.</p>
+            <p>Algo muy curioso de un <strong>test de penetración</strong> es que no solo comprende el análisis de dispositivos digitales sino también de dispositivos físicos, incluso el análisis del factor humano por medio de la <strong>Ingeniería social</strong>.</p>
+            <img src="https://www.sofistic.com/wp-content/uploads/2015/05/ingenieria-social.png" alt="Ingeniería Social" class="img-responsive">
+            <p>Esta serie de técnicas tienen sus fases:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><strong>Reconocimiento:</strong> Es la recopilación de información (desde nombres, direcciones de correo, direcciones IP y toda la que se pueda obtener) sobre el objetivo antes de iniciar la prueba.</li>
+                    <li><strong>Escaneo:</strong> Es la forma de utilizar la información obtenida anteriormente para encontrar posibles formas de ataques. Esta etapa se involucran puertos y servicios con el fin de ser escaneados para encontrar huecos de seguridad y así definir la ruta de ataque.</li>
+                    <li><strong>Explotación:</strong> Este punto es clave, ya que en el se explota toda la información posible, se obtienen datos referentes a los usuarios, a los nombres de los equipos, a los servicios de red, entre otros.</li>
+                    <li><strong>Manteniendo el acceso:</strong> Al lograr tener acceso al sistema, se debe buscar mantener el sistema comprometido a disposición del atacante.</li>
+                    <li><strong>Borrado de huellas:</strong> Este punto es uno de los más importantes, es el proceso que se realiza para eliminar cualquier rastro que comprometa al atacante.</li>
+                </ul>
+            </p>
+            <p>El <strong>Pentesting</strong> puede ser o no ético. La metodología de un <strong>Pentest</strong> se divide entre: <strong>BlackBox</strong> (sombrero negro), <strong>WhiteBox</strong> (sombrero blanco) y <strong>GrayBox</strong> (sombrero gris).</p>
+            <img src="https://www.outpost24.com/sites/default/files/inline-images/Hackers.png" alt="Hackers" class="img-responsive">
+            <p>
+                En <strong>CiberSeguridad</strong> un <strong>vector de ataque</strong> es una ruta o camino que utiliza un atacante para obtener acceso al sistema informático, en otras palabras, son los pasos a seguir del <strong>Pentester</strong> para materializar su ataque. Algunos <strong>vectores de ataque</strong> son:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><strong>APT (Amenaza avanzada persistente):</strong> Este tipo de ataques de mayor gravedad a los habituales, este posee características que hacen que sus efectos dañinos sean más fuertes. El atacante que usa <strong>APT</strong> es muy paciente, mucho más que el atacante promedio.</li>
+                    <li><strong>Botnet:</strong>En este tipo de ataque se usan <strong>virus troyanos</strong> especiales para violar la seguridad de las computadoras de varios usuarios, así de esta forma tomar el control de cada una de ellas y organizarlas en una red de manera que el atacante pueda administrarlas de forma remota. Un dato curioso es que la palabra <strong>Botnet</strong> se forma a partir de las palabras "robot" y "red".</li>
+                    <li><strong>Ataques internos:</strong> Aunque parezca mentira los ataques más comunes (aproximadamente el 80%) parten desde el interior al exterior. Este tipo de ataque son los que más impacto pueden generar en una infraestructura ya que por estar en el interior se es más fácil acceder a la red interna y desde allí atacar.</li>
+                    <li><strong>Amenazas Móviles:</strong> Este tipo de ataque parte de la tendencia de llevar consigo un dispositivo móvil y por medio de ellos acceder a la información, a la red de una empresa.</li>
+                </ul>
+            </p>
+            <p>
+                Algunos términos importantes que se deben conocer son:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><strong>¿Qué es un activo?:</strong> Es todo lo valioso para una empresa.</li>
+                    <li><strong>¿Qué es una amenaza?:</strong> Es una falla que puede ocurrir en una empresa, incluso fallas que existen pero no se conocen.</li>
+                    <li><strong>¿Qué es una vulnerabilidad?:</strong> Es una debilidad de un sistema informático que puede ser utilizada para causar daños.</li>
+                    <li><strong>¿Qué es un riesgo?:</strong> Es un proceso que comprende la identificación de las vulnerabilidades y amenazas dando lugar a un ataque.</li>
+                    <li><strong>¿Qué es un Exploit?:</strong> Es el proceso de tomar las fallas que existe en el sistema y "explotarlas".</li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <div id="disqus_thread" class="disqus"></div>
         </section>
     </div>
+
+
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://joaquin-araujo.disqus.com/';
+        this.page.identifier = 'https://joaquinaraujo.github.io/platzi_seguridad-informatica/';
+        this.page.title = 'Guía del Curso de Introducción a la Seguridad Informática';
+    };
+
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://joaquin-araujo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Por favor, active JavaScript para ver el <a href="https://disqus.com/?ref_noscript">comentarios impulsados por Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//joaquin-araujo.disqus.com/count.js" async></script>
 
     <!-- Pie de página -->
     <footer>

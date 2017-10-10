@@ -1,32 +1,50 @@
-div.jumbotron {
-            background-image: url('seguridad-informatica.png');
-            background-position: top;
-            background-color: #014164;
-        }
-            .white {
-                color: white !important;
+* {
+    font-family: 'Quicksand', monospace;
+}
+    div.jumbotron {
+                background-image: url('seguridad-informatica.png');
+                background-position: top;
+                background-color: #014164;
             }
-                footer {
-                    background-color: #eee;
+                section {
+                    font-size: 1.4em;
                 }
-                    footer div.container img {
-                        display: block;
-                        margin: 3vh auto;
+                    .white {
+                        color: white !important;
                     }
-                        p.foo, pre {
-                            font-size: 1.1em;
+                        footer {
+                            background-color: #eee;
+
                         }
-                        footer div.container-fluid {
-                            background-color: #014164;
-                        }
-                            footer div.container-fluid p {
-                                margin: .5%;
+                            footer div.container img {
+                                display: block;
+                                margin: 3vh auto;
                             }
-                                kbd {
-                                        padding: 2px 6px;
-                                        font-size: 95%;
-                                        background-color: #014164;
+                                p.foo, pre {
+                                    font-size: 1.2em;
+                                }
+                                footer div.container-fluid {
+                                    background-color: #014164;
+                                }
+                                    footer div.container-fluid p {
+                                        margin: .5%;
                                     }
-                                        blockquote p {
-                                            font-size: .8em;
-                                        }
+                                        kbd {
+                                                padding: 2px 6px;
+                                                font-size: 95%;
+                                                background-color: #014164;
+                                            }
+                                                blockquote p {
+                                                    font-size: .8em;
+                                                }
+                                                    section strong {
+                                                        color: #014164;
+                                                        font-family: 'Rubik', sans-serif;
+                                                    }
+                                                        .img-responsive {
+                                                            margin: 0 auto;
+                                                            padding: 12px;
+                                                        }
+                                                            h1, h2, h3, h4, h5, h6 {
+                                                                font-family: 'Rubik', sans-serif;
+                                                            }
