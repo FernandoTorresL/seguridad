@@ -1,6 +1,6 @@
 # Guía del Curso de Introducción a la Seguridad Informática
 
-Este repositorio contiene una sencilla guía alojada en GitHub Pages con el fin de usarla como recordatorio de algunos comandos que en ocasiones olvidamos. Puedes ingresar a la guía [aquí](https://joaquinaraujo.github.io/platzi_seguridad-informatica/).
+Este repositorio contiene una sencilla guía alojada en GitHub Pages con el fin de usarla como recordatorio de algunos comandos que en ocasiones olvidamos. Puedes ingresar a la guía [aquí](https://joaquinaraujo.github.io/seguridad/).
 
 ## ¿Algún error? ¿Faltó algún comando?
 
