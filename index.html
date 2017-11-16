@@ -115,7 +115,46 @@
             <p>El <strong>Information Gathering</strong> es la instancia previa al intento de ejecutar una intrusión informática a un sistema, consiste en recaudar la máxima cantidad de información de fuentes abiertas, esta información permite al atacante crear un perfil de su objetivo. Con la elaboración de esta auditoria las empresas controlan que y cuanta información debería estar disponible en las fuentes donde se encontró.</p>
             
             <h3>Configuración de interfaces de red y servicios en Kali Linux</h3>
-            <p>...</p>
+            <p>
+                En <strong>Kali Linux</strong> tenemos algunos programas que nos ayudarán a realizar ciertas tareas, son los siguientes:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li>
+                        <kbd>ifconfig [interfaz] [opción]</kbd> Lista todas las interfaces de red. En los sistemas operativos más actualizados la nomenclatura para definir la interfaz Ethernet (eth0) es enp1s0.
+                        <!-- Lista desordenada -->
+                        <ul>
+                            <li><code>down</code> Apaga la interfaz.</li>
+                            <li><code>up</code> Enciende la interfaz.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <kbd>macchanger -[opción] [interfaz]</kbd> Permite cambiar la MAC.
+                        <!-- Lista desordenada -->
+                        <ul>
+                            <li><code>-h</code> Muestra el menú de ayuda.</li>
+                            <li><code>-r</code> Establece una MAC aleatoria.</li>
+                            <li><code>-m [00.11.22.33.44]</code> Establece una MAC personalizada.</li>
+                            <li><code>-p</code> Restablece la MAC. Establece la MAC original.</li>
+                        </ul>
+                    </li>
+                    <li><kbd>netdiscover -i [interfaz]</kbd> Escanea los segmentos de IP dentro de una red local.</li>
+                    <li>
+                        <kbd>arp-scan -l -i [interfaz]</kbd> Escanea los segmentos de IP dentro de una red local.
+                        <!-- Lista desordenada -->
+                        <ul>
+                            <li><code>-l</code> Indica que buscará los segmentos en el área local.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <kbd>service [servicio] start|reset|stop|status</kbd> Permite iniciar, reiniciar, detener un servicio del sistema.
+                        <!-- Lista desordenada -->
+                        <ul>
+                            <li>En <b>/etc/init.d</b> se encuentran los servicios.</li>
+                        </ul>
+                    </li>
+                    <li><kbd>netstat -ntpl</kbd> Imprime los servicios que se encuentran en ejecución.</li>
+                </ul>
+            </p>
         </section>
 
         <section>
