@@ -222,6 +222,50 @@
                 <li><kbd>file [archivo o directorio]</kbd> Imprime el tipo de archivo.</li>
             </ul>
 
+            <h2>Simple Bash Scripting</h2>
+
+            <h3>Interactividad en bash</h3>
+            <p>
+                <strong>Bash</strong> es una consola de comandos <strong>UNIX</strong>, escrita para el proyecto <strong>GNU</strong>.
+<pre>
+    #!/bin/bash
+    
+    echo "What is your name?"
+    
+    read NAME
+
+    echo "Hello $NAME"
+</pre>
+            </p>
+            <p><b>Nota:</b> Es importante tener cuidado entre usar comillas simples ('') y comillas dobles (""). Al usar comillas simples no se ejecuta la variable sino se pasa como argumento, en cambio, si se usa comillas dobles si toma el valor de la variable y la reemplaza.</p>
+            <!-- Lista desordenada -->
+            <ul>
+                <li><kbd>sh [archivo]</kbd> Ejecuta un archivo con bash.</li>
+            </ul>
+            <p>En <strong>bash</strong> los argumentos se pasan al ejecutar el <code>archivo.sh [arg1] [arg2] [arg...]</code> y se obtienen dentro del archivo por medio de las variables reservadas <code>$1</code>, <code>$2</code>, <code>$3</code>, ... El nombre del script se almacena en la variable <code>$0</code>.</p>
+
+            <h4>Palabras y variables reservas en bash</h4>
+            <!-- Lista desordenada -->
+            <ul>
+                <li><b>#!/bin/bash</b> Indica que el script se interpretará con bash.</li>
+                <li><kbd>echo "[cadena de texto]"</kbd> Imprime texto y variables.</li>
+                <li><kbd>printf "[cadena de texto]"</kbd> Imprime texto y detecta los saltos de línea.</li>
+                <li><kbd>\n</kbd> Salto de línea.</li>
+                <li><kbd>read [variable]</kbd> Lee un dato que se obtiene por medio del usuario y lo almacena en una variable.</li>
+                <li><kbd>shift</kbd> Rota de derecha a izquierda la impresión de los argumentos obtenido, de esta forma, <code>$2</code> pasa a ser <code>$1</code> quedando descartado el <code>$1</code> anterior.</li>
+                <li><kbd>$#</kbd> Almacena el número de argumentos que no se han pasado.</li>
+                <li><kbd>$*</kbd> Almacena todos los argumentos.</li>
+                <li><kbd>$@</kbd> Almacena todos los argumentos.</li>
+                <li><kbd>$_</kbd> Almacena el comando anterior ejecutado.</li>
+                <li><kbd>$$</kbd> Almacena el PID del propio proceso shell.</li>
+                <li><kbd>$?</kbd> Almacena el estado de salida del comando anterior.</li>
+            </ul>
+
+            <h2>Redes</h2>
+
+            <h3>Modelos OSI de ISO</h3>
+            <p>...</p>
+
         </section>
 
         <section>
