@@ -173,8 +173,55 @@
                 </ul>
             </p>
 
-            <h3>Instalar máquinas vulnerables para pruebas</h3>
-            <p></p>
+            <h2>Comandos esenciales</h2>
+
+            <h3>Comandos esenciales de bash</h3>
+            <p>
+                Algunos comandos que debes conocer de <strong>Linux</strong> son:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>ls -[banderas]</kbd> Lista los archivos y directorios.</li>
+                    <!-- Lista desordenada -->
+                    <ul>
+                        <span>El comando <code>ls</code> puede tener o no banderas.</span>
+                        <li><code>-al</code> Lista archivos y directorios detallando los permisos.</li>
+                    </ul>
+                    <li><kbd>mkdir -[banderas] [nombre]</kbd> Crea un directorio.</li>
+                    <!-- Lista desordenada -->
+                    <ul>
+                        <span>El comando <strong>mkdir</strong> puede tener o no banderas.</span>
+                        <li><code>-p</code> Crea una carpeta dentro de otra carpeta.</li>
+                    </ul>
+                    <li><kbd>cd [ruta]</kbd> Lleva al home, pero si se le pasa una ruta nos lleva a ella.</li>
+                    <li><kbd>pwd</kbd> Imprime la ruta actual (el directorio en el que se trabaja).</li>
+                    <li><kbd>rm -[banderas] [archivo]</kbd> Elimina un archivo.</li>
+                    <li><kbd>rmdir [directorio]</kbd> Elimina un directorio.</li>
+                    <li><kbd>mv [archivo o directorio] [ruta destino]</kbd> Mueve un archivo o directorio a otro lugar.</li>
+                    <li><kbd>whatis [binario]</kbd> Imprime una breve descripción del comando.</li>
+                </ul>
+            </p>
+
+            <h3>Comandos con patrones en bash</h3>
+            <p>
+                En los comandos con patrones se usan caracteres especiales para reemplazar algo, por ejemplo:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>mkdir -p uno/{dos,tres,cuatro}</kbd> Crea 3 directorios dentro de la carpeta uno.</li>
+                    <li><kbd>cd Joaq*</kbd> Completa el resto de caracteres.</li>
+                    <li><kbd>cd ~</kbd> Lleva a home.</li>
+                    <li><kbd>cd -</kbd> Lleva de regreso al directorio anterior.</li>
+                </ul>
+            </p>
+
+            <h3>Comando de búsqueda y compresión en bash</h3>
+            <!-- Lista desordenada -->
+            <ul>
+                <li><kbd>find [directorio] -name "[archivo o directorio]"</kbd> Busca un archivo o directorio por su nombre.</li>
+                <li><kbd>locale [archivo]</kbd> Busca e imprime las rutas donde e encuentra un archivo.</li>
+                <li><kbd>whereis [comando]</kbd> Muestra la ubicación del binario.</li>
+                <li><kbd>file [archivo o directorio]</kbd> Imprime el tipo de archivo.</li>
+            </ul>
+
         </section>
 
         <section>
