@@ -155,6 +155,26 @@
                     <li><kbd>netstat -ntpl</kbd> Imprime los servicios que se encuentran en ejecución.</li>
                 </ul>
             </p>
+
+            <h3>Desplegar Kali Linux en Docker</h3>
+            <p><strong>Docker</strong> es una plataforma abierta para que desarrolladores y administradores de sistemas desarrollen, envíen y ejecuten aplicaciones distribuidas, ya sea en computadoras portátiles, maquinas virtuales de centros de datos o en la nube. Puedes conocer más sobre <strong>Docker</strong> en esta <a href="https://joaquinaraujo.github.io/docker" target="_blank">guía y resumen</a> del curso de Docker de Platzi.</p>
+            <p>
+                Para preparar el laboratorio con <strong>Kali Linux</strong> y <strong>Docker</strong> ejecutaremos los siguientes comandos:
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>docker run -it kalilinux/kali-linux-docker</kbd> Descarga la imagen e inicia el contenedor.</li>
+                    <!-- Lista desordenada -->
+                    <span>Dentro del contenedor se ejecutarán los siguientes comandos:</span>
+                    <ul>
+                        <li><kbd>apt update</kbd> Actualiza todos los repositorios.</li>
+                        <li><kbd>apt search kali-linux*</kbd> Este comando tiene como función buscar de "forma general (*)" los metapaquetes de <b>kali-linux</b> con el fin de instalar lo necesario, por ejemplo, el paquete <strong>kali-linux</strong> es la base completa del sistema operativo.</li>
+                        <li><kbd>apt install kali-linux-all</kbd> Instala todas las herramientas de <strong>Kali Linux</strong>. Se puede cambiar <b>all</b> por <b>full</b>, la diferencia radica en que <b>la versión full</b> contiene la interfaz gráfica.</li>
+                    </ul>
+                </ul>
+            </p>
+
+            <h3>Instalar máquinas vulnerables para pruebas</h3>
+            <p></p>
         </section>
 
         <section>
