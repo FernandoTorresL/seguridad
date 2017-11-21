@@ -331,6 +331,93 @@
             <h3>Sistema de nombre de dominio - DNS</h3>
             <p>El <strong>sistema de nombre de dominio (DNS)</strong> es una parte fundamental de Internet: relaciona los dominios con una IP.</p>
 
+            <h2>Information Gathering</h2>
+
+            <h3>Information Gathering y Footprinting</h3>
+            <p><strong>Information Gathering</strong> es el proceso de recolectar información sobre algo de diversas fuentes y por diversos medios. <strong>La recopilación de información</strong> es una habilidad humana básica necesaria para llevar a cabo diferentes actividades.</p>
+            <p><strong>Footprinting</strong> es la primera forma que los <strong>hackers</strong> utilizan para recopilar información sobre sistemas informáticos y las empresas a las que pertenecen. Su objetivo es aprender todo lo que se pueda sobre un sistema, incluyendo sus capacidades de acceso remoto, sus puertos y servicios como los aspectos de su seguridad.</p>
+
+            <h3>Whois</h3>
+            <p>
+                <strong>Whois</strong> es una herramienta que proporciona los datos de registro de un dominio.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>whois [dominio]</kbd> Permite ver la información de registro de un dominio.</li>
+                </ul>
+            </p>
+
+            <h3>Netcraft</h3>
+            <p><strong><a href="https://www.netcraft.com/" target="_blank">Netcratf</a></strong> brinda servicios de seguridad en Internet que incluyen servicios anti-fraude y antiphishing, pruebas de aplicaciones y escaneo PCI.</p>
+
+            <h3>HTTrack</h3>
+            <p>
+                Le permite descargar un sitio de la World Wide Web de Internet a un directorio local, crear recursivamente todos los directorios, obtener HTML, imágenes y otros archivos desde el servidor a su computadora. Para más información click <a href="https://www.httrack.com/" target="_blank">aquí</a>!
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>httrack -h</kbd> Muestra el menú de ayuda.</li>
+                    <li><kbd>httrack [dominio]</kbd> Descarga una copia exacta de la página web.</li>
+                </ul>
+            </p>
+
+            <h3>Fierce</h3>
+            <p>
+                Permite obtener información de <strong>DNS</strong> en los dominios.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>fierce -dns [dominio]</kbd> Busca información sobre los <strong>DNS</strong>.</li>
+                </ul>
+            </p>
+
+            <h3>MetaGooFil</h3>
+            <p>
+                Permite extraer la metadata de archivos alojados en una página web.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>metagoofil -d [dominio] -t [pdf/doc] -l 50 -n [limite de archivos a descargar] -f [ruta de resultado]</kbd></li>
+                </ul>
+            </p>
+
+            <h3>Dmitry</h3>
+            <p>
+                Permite hacer recopilación de información de sitios de diferentes maneras.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>dmitry -h</kbd> Muestra el menú de ayuda junto con todas las banderas que se les puede pasar al comando.</li>
+                </ul>
+            </p>
+
+            <h3>Escaneo de Puertos con nmap</h3>
+            <p>
+                <strong>Nmap</strong> es un escáner de seguridad gratuito, explorador de puertos y herramienta de exploración de red.
+                <img src="https://home-assistant.io/images/supported_brands/nmap.png" alt="The Network Mapper" class="img-responsive">
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>nmap -sP [IP]/[Mascara de red]</kbd> Hace un ping de las IPs.</li>
+                    <li><kbd>nmap -O [IP]</kbd> Busca los flags y puertos para determinar que sistema operativo esta corriendo.</li>
+                    <li><kbd>nmap -sV [IP]</kbd> Escanea los servicios que esta corriendo la maquina a la que se tiene asignada la IP.</li>
+                </ul>
+            </p>
+
+            <h3>Escaneo de puertos con Unicornscan</h3>
+            <p>
+                <strong>Unicornscan</strong> permite escanear los puertos de un equipo para conocer los servicios activos.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>us [IP] -Iv</kbd> Escanea los puertos.</li>
+                </ul>
+            </p>
+
+            <h3>Email Harvesting</h3>
+            <p>
+                El programa <strong>theharvester</strong> permite obtener información pública de cuentas de correo en un dominio.
+                <!-- Lista desordenada -->
+                <ul>
+                    <li><kbd>theharvester -d [dominio] -b google -l [300]</kbd> Busca información por medio de Google hasta los 300 resultados, en este caso.</li>
+                </ul>
+            </p>
+
+            
+
         </section>
 
         <section>
